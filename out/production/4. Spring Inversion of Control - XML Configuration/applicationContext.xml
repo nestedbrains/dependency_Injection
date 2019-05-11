@@ -14,15 +14,12 @@
            <constructor-arg ref="myFortune" />
        </bean>
 
-
-
     <bean id="trackCoach" class="com.ovi.springdemo.TrackCoach">
         <!--set up constructor injection -->
         <constructor-arg ref="myFortune" />
     </bean>
 
        <bean id="myCricketCouch" class="com.ovi.springdemo.CricketCoach">
-           <!--set up Setter  -->
            <property name="fortuneService" ref="myFortune"/>
        </bean>
 
